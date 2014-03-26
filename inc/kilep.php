@@ -1,0 +1,10 @@
+<?php
+session_start();
+unset($_SESSION["belepve"]);
+unset($_SESSION["username"]);
+unset($_SESSION["email"]);
+session_destroy();
+ob_end_clean();
+header("Location:../index.php");
+die();
+?>
